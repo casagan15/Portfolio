@@ -6,38 +6,13 @@ import Link from "next/link";
 export default function HomePage() {
   return (
     <div className="min-h-screen">
-      {/* NAVBAR */}
-      <nav className="flex justify-between items-center px-10 py-6">
-        <div>
-          <h1 className="text-xl font-semibold">John Casagan</h1>
-          <p className="text-sm text-gray-500">Software Developer</p>
-        </div>
-
-        <ul className="flex gap-6 text-gray-600">
-          <li>
-            <Link href="/" className="font-medium text-black">
-              Home
-            </Link>
-          </li>
-          <a href="#about" className="hover:text-black">
-            About
-          </a>
-          <li>
-            <Link href="/projects">Projects</Link>
-          </li>
-          <li>
-            <Link href="/contact">Contact</Link>
-          </li>
-        </ul>
-      </nav>
-
       {/* HERO SECTION */}
 
       <section className="flex items-start justify-between gap-20 px-16 mt-24 bg-[url('/bg.jpg')] bg-cover bg-center bg-no-repeat rounded-3xl py-20">
         <div className="max-w-xl">
           <p className="text-green-600 font-medium mb-2">● Message me</p>
 
-          <h2 className="text-5xl font-bold mb-6">Hey, I'm John 👋</h2>
+          <h2 className="text-5xl font-bold mb-6">Hey, I'm John </h2>
 
           <p className="text-gray-600 mb-8">
             A passionate software developer eager to learn and build websites
@@ -106,7 +81,9 @@ export default function HomePage() {
             />
             <h3 className="font-semibold text-lg">fast-kaon Website</h3>
             <p className="text-sm text-gray-600">
-              The Fast Kaon website was developed using modern web technologies such as HTML, CSS, and JavaScript for the structure, design, and interactivity of the platform.
+              The Fast Kaon website was developed using modern web technologies
+              such as HTML, CSS, and JavaScript for the structure, design, and
+              interactivity of the platform.
             </p>
           </div>
 
@@ -139,6 +116,27 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+    Black Container
+      <section className="flex items-center justify-center px-6 py-20">
+      <div className="w-full max-w-6xl rounded-2xl bg-black p-16 text-center shadow-2xl">
+        
+        <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          Need help building something?
+        </h1>
+
+        <p className="text-gray-300 text-lg max-w-2xl mx-auto mb-10">
+          Whether you're searching for a dedicated partner to develop your project
+          or simply need expert support, I'm here to help.
+        </p>
+
+        <button className="bg-white text-black font-medium px-8 py-3 rounded-xl shadow-md hover:bg-gray-200 transition duration-300">
+          Get in Touch
+        </button>
+
+      </div>
+    </section>
+
     </div>
   );
 }
