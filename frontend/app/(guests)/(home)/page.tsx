@@ -49,12 +49,7 @@ export default function HomePage() {
           />
         </div>
       </section>
-      <section id="about" className="px-16 mt-32">
-        <h2 className="text-3xl font-bold mb-4">About Me</h2>
-        <p className="text-gray-600">
-          Hi there, I'm John. I'm a Software Developer...
-        </p>
-      </section>
+      
 
       {/* PROJECTS SECTION */}
       <section className="px-16 mt-32 flex flex-col items-center text-center">
@@ -85,6 +80,13 @@ export default function HomePage() {
               such as HTML, CSS, and JavaScript for the structure, design, and
               interactivity of the platform.
             </p>
+            
+            <div className="flex justify-start">
+  <button className="bg-black text-white px-4 py-1.5 text-sm rounded-full font-medium hover:bg-gray-800 transition duration-300">
+    Get Started
+  </button>
+</div>
+              
           </div>
 
           <div className="rounded-2xl border p-4 shadow-sm">
@@ -99,6 +101,7 @@ export default function HomePage() {
             <p className="text-sm text-gray-600">
               A clean landing page design for practice.
             </p>
+           
           </div>
 
           <div className="rounded-2xl border p-4 shadow-sm">
@@ -113,11 +116,12 @@ export default function HomePage() {
             <p className="text-sm text-gray-600">
               A basic web app made for school requirements.
             </p>
+             
           </div>
         </div>
       </section>
 
-    Black Container
+    
       <section className="flex items-center justify-center px-6 py-20">
       <div className="w-full max-w-6xl rounded-2xl bg-black p-16 text-center shadow-2xl">
         
